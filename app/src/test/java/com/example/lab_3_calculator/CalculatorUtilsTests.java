@@ -190,4 +190,15 @@ public class CalculatorUtilsTests {
 
         assertEquals(expectedOutput, actualOutput);
     }
+
+
+    @Test
+    public void multipleTaskInputTestingMultiplicationExpression(){
+        final String inputRow = "10*2/10+8/2";
+        final String expectedOutput = "6";
+        final String actualOutput = CalculatorUtilsUsingLibraries.getResult(inputRow);
+
+        assertEquals(expectedOutput, actualOutput);
+    }
+
 }
