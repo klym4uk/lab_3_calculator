@@ -11,6 +11,8 @@ import com.google.android.material.button.MaterialButton;
 import org.mozilla.javascript.Context;
 import org.mozilla.javascript.Scriptable;
 
+import com.example.lab_3_calculator.CalculatorUtilsUsingLibraries;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -98,7 +100,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if(sqrt){
 
-            Double finalResult = Math.sqrt(Double.parseDouble(getResult(dataToCalculate))) ;
+            Double finalResult = Math.sqrt(Double.parseDouble(CalculatorUtilsUsingLibraries.getResult(dataToCalculate))) ;
             solutionTv.setText(finalResult.toString());
 
             if(!finalResult.equals("Err")){
@@ -108,28 +110,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         else{
             solutionTv.setText(dataToCalculate);
 
-            String finalResult = getResult(dataToCalculate);
+            String finalResult = CalculatorUtilsUsingLibraries.getResult(dataToCalculate);
 
             if(!finalResult.equals("Err")){
                 resultTv.setText(finalResult);
             }
         }
 
-    }
-
-    String getResult(String data){
-        try{
-            Context context  = Context.enter();
-            context.setOptimizationLevel(-1);
-            Scriptable scriptable = context.initStandardObjects();
-            String finalResult =  context.evaluateString(scriptable,data,"Javascript",1,null).toString();
-            if(finalResult.endsWith(".0")){
-                finalResult = finalResult.replace(".0","");
-            }
-            return finalResult;
-        }catch (Exception e){
-            return "Err";
-        }
     }
 
 }

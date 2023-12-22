@@ -1,0 +1,19 @@
+
+d
+java:S3973Z"GUse indentation to denote the code conditionally executed by this "if".(±¯ˆ›8â’Ü“É1
+]
+java:S1226="@Introduce a new variable instead of reusing the parameter "btn".(¤ïÅÎ8ä’Ü“É1
+E
+java:S1659"(Declare "solutionTv" on a separate line.(¶ğˆ8î’Ü“É1
+i
+java:S1659"GDeclare "buttonSqrt" and all following declarations on a separate line.(şòšüÿÿÿÿ8î’Ü“É1
+m
+java:S1659"KDeclare "buttonMultiply" and all following declarations on a separate line.(ÂÅÕôşÿÿÿÿ8î’Ü“É1
+a
+java:S1659"DDeclare "button1" and all following declarations on a separate line.(¦ŠÈ˜8î’Ü“É1
+I
+java:S1659"'Declare "buttonDot" on a separate line.(‰¥ïüÿÿÿÿ8î’Ü“É1
+t
+java:S3776C"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Ğ¸™áúÿÿÿÿ8Ä“Ü“É1
+x
+java:S2159j"VRemove this call to "equals"; comparisons between unrelated types always return false.(¤ãèâúÿÿÿÿ8Ë“Ü“É1
